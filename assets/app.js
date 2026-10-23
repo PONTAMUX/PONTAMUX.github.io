@@ -75,6 +75,7 @@
     return r.json();
   }).then(function (apps) {
     root.textContent = '';
+    if (!apps.length) { root.appendChild(el('p', 'loading', 'まだアプリはありません。')); return; }
     apps.forEach(function (app) {
       try { root.appendChild(render(app)); } catch (e) { console.error(e); }
     });
