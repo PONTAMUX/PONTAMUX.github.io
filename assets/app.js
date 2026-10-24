@@ -50,7 +50,15 @@
 
   function render(app) {
     var card = el('article', 'card');
-    card.appendChild(el('h2', null, app.name));
+    var head = el('div', 'head');
+    if (app.icon) {
+      var ic = el('img', 'icon');
+      ic.src = app.icon;
+      ic.alt = '';
+      head.appendChild(ic);
+    }
+    head.appendChild(el('h2', null, app.name));
+    card.appendChild(head);
     card.appendChild(el('p', 'summary', app.summary || ''));
     card.appendChild(el('p', 'desc', app.description || ''));
     var meta = el('div', 'meta', app.platform || '');

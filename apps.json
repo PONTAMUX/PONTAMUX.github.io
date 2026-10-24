@@ -13,7 +13,8 @@
       "OpenCode",
       "ローカル",
       "MIT"
-    ]
+    ],
+    "icon": "chatdango/icon.png"
   },
   {
     "id": "vcast-studio",
@@ -27,6 +28,7 @@
       "配信",
       "VRM",
       "GPL-2.0"
-    ]
+    ],
+    "icon": "vcast-studio/icon.png"
   }
 ]
