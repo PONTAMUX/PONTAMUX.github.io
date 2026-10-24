@@ -24,13 +24,3 @@ main{max-width:1000px;margin:0 auto;padding:16px 20px}
 .btn.sub{background:transparent;color:var(--accent);border:1px solid var(--accent)}
 .release{font-size:.8rem;color:var(--muted)}
 .site-footer{text-align:center;padding:32px 20px;color:var(--muted)}
-
-.back{color:var(--accent);text-decoration:none;font-size:.9rem}
-.detail{max-width:760px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;gap:14px}
-.detail h1{margin:0;font-size:1.8rem}
-.detail .summary{margin:0;color:var(--muted)}
-.detail .banner{max-width:320px;width:100%;height:auto}
-.detail .sec{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:18px;display:flex;flex-direction:column;gap:10px}
-.detail .sec h2{margin:0;font-size:1.1rem}
-.detail .desc{margin:0;color:var(--text);white-space:pre-line}
-.detail .shot{width:100%;height:auto;border-radius:8px;border:1px solid var(--border)}
