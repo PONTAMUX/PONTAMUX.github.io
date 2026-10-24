@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VCast Studio — 3Dアバター配信に特化した軽量配信ソフト</title>
+<meta name="description" content="VRMアバターをそのまま配信できる、軽量なWindows向け配信ソフト。GPL-2.0-or-later。">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--bg:#14141a;--card:#1e1e27;--fg:#ececf3;--sub:#a0a0b4;--ac:#7c4dff;--ac2:#3182f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Yu Gothic UI","Hiragino Sans",system-ui,sans-serif;line-height:1.8}
+main{max-width:860px;margin:0 auto;padding:56px 20px}
+header{text-align:center;margin-bottom:48px}
+header img{width:128px;height:128px}
+h1{font-size:2.2rem;margin:16px 0 8px}
+.lead{color:var(--sub);font-size:1.05rem}
+.btn{display:inline-block;margin:24px 8px 0;padding:12px 28px;border-radius:10px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;text-decoration:none;font-weight:bold}
+.btn.sub{background:var(--card);border:1px solid #33334a}
+h2{margin-top:48px;border-left:4px solid var(--ac);padding-left:12px;font-size:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border-radius:12px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--sub);font-size:.95rem}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden}
+td{padding:10px 16px;border-bottom:1px solid #2c2c3a}td:first-child{color:var(--sub);width:9em}
+.note{background:#2a2433;border:1px solid #4b3a66;border-radius:12px;padding:14px 18px;color:#d9cdf0}
+footer{margin-top:64px;text-align:center;color:var(--sub);font-size:.85rem}
+a{color:#9db8ff}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="VCast Studio アイコン">
+  <h1>VCast Studio</h1>
+  <p class="lead">3Dアバター配信に特化した、軽量なWindows向け配信ソフト（仮称）</p>
+  <a class="btn" href="https://github.com/PONTAMUX/vcast-studio">GitHub でソースを見る</a>
+  <a class="btn sub" href="https://github.com/PONTAMUX/vcast-studio#readme">README</a>
+</header>
+
+<h2>特徴</h2>
+<div class="grid">
+  <div class="card"><h3>かんたんモード</h3><p>アバター・マイク・配信先・映すものを上から順に設定して「配信開始」。</p></div>
+  <div class="card"><h3>プロモード</h3><p>シーン編集、スタジオモード、音声ミキサー、サウンドボード、ホットキー、プロファイル。</p></div>
+  <div class="card"><h3>VRMアバター</h3><p>VRMを読み込んで表示。Webカメラの表情トラッキング、キー・マウスに合わせた動き、WASDで歩かせるモード。</p></div>
+  <div class="card"><h3>外部から操作</h3><p>obs-websocket v5 互換のリモコン（Stream Deck など）に対応。パスワード必須。</p></div>
+</div>
+
+<h2>仕様</h2>
+<table>
+  <tr><td>対応OS</td><td>Windows 10 / 11（64bit）</td></tr>
+  <tr><td>エンジン</td><td>libobs（OBSのコア）を .NET 8 から利用</td></tr>
+  <tr><td>画面</td><td>WPF</td></tr>
+  <tr><td>アバター描画</td><td>three.js + three-vrm（実験的に D3D11 ネイティブ描画）</td></tr>
+  <tr><td>ライセンス</td><td>GPL-2.0-or-later</td></tr>
+</table>
+
+<h2>現在の状態</h2>
+<p class="note">開発中の試作です。自動テストと連続運転テストは通っていますが、実際のYouTube/Twitch配信・Webカメラ・別PC/GPU・Windows 10 での確認はまだです。配布用のzipは未公開で、いまはソースコードのみ公開しています。コード署名はしていないため、将来配布した際にWindowsの警告が出ます。</p>
+
+<footer>
+  <p><a href="../">← PONTAMUX Apps</a></p>
+  <p>「OBS」は OBS Project の商標です。本ソフトは公式のものではありません。</p>
+  <p>© PONTAMUX · <a href="https://github.com/PONTAMUX/vcast-studio">github.com/PONTAMUX/vcast-studio</a></p>
+</footer>
+</main>
+</body>
+</html>

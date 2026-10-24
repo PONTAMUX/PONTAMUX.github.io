@@ -7,7 +7,13 @@
     "platform": "Windows / Node.js",
     "repo": null,
     "web": "https://github.com/phenom0525/ChatDango",
-    "tags": ["Claude Code", "Codex", "OpenCode", "ローカル", "MIT"],
+    "tags": [
+      "Claude Code",
+      "Codex",
+      "OpenCode",
+      "ローカル",
+      "MIT"
+    ],
     "banner": "assets/chatdango/banner.png",
     "detail": [
       {
@@ -30,6 +36,20 @@
         "title": "そのほか",
         "text": "・返信の読み上げ(VOICEVOX 対応)\n・テーマ(文字の大きさ・フォント・明るさ)の変更\n・紹介動画は GitHub の README で見られます\n\nライセンスは MIT です。"
       }
+    ]
+  },
+  {
+    "id": "vcast-studio",
+    "name": "VCast Studio",
+    "summary": "3Dアバター配信に特化した、軽量な配信ソフト（仮称）",
+    "description": "VRMアバターをそのまま配信できます。かんたんモードとプロモード、WASDで歩かせるモード、obs-websocket互換のリモコンに対応。開発中の試作で、いまはソースコードのみ公開しています。",
+    "platform": "Windows 10 / 11（64bit）",
+    "repo": null,
+    "web": "vcast-studio/",
+    "tags": [
+      "配信",
+      "VRM",
+      "GPL-2.0"
     ]
   }
 ]
