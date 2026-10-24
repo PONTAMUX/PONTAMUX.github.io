@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>V-edit — 動画編集に特化した軽量エディタ</title>
+<meta name="description" content="カット・テロップ・差し込み・効果音・音声処理を1つの project.json で扱う、Windows向けの動画編集ツール。">
+<link rel="icon" href="favicon.png">
+<style>
+:root{--bg:#14141a;--card:#1e1e27;--fg:#ececf3;--sub:#a0a0b4;--ac:#7c4dff;--ac2:#3182f6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Yu Gothic UI","Hiragino Sans",system-ui,sans-serif;line-height:1.8}
+main{max-width:860px;margin:0 auto;padding:56px 20px}
+header{text-align:center;margin-bottom:48px}
+header img{width:128px;height:128px}
+h1{font-size:2.2rem;margin:16px 0 8px}
+.lead{color:var(--sub);font-size:1.05rem}
+.btn{display:inline-block;margin:24px 8px 0;padding:12px 28px;border-radius:10px;background:linear-gradient(135deg,var(--ac),var(--ac2));color:#fff;text-decoration:none;font-weight:bold}
+.btn.sub{background:var(--card);border:1px solid #33334a}
+h2{margin-top:48px;border-left:4px solid var(--ac);padding-left:12px;font-size:1.3rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.card{background:var(--card);border-radius:12px;padding:18px 20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0;color:var(--sub);font-size:.95rem}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden}
+td{padding:10px 16px;border-bottom:1px solid #2c2c3a}td:first-child{color:var(--sub);width:9em}
+.note{background:#2a2433;border:1px solid #4b3a66;border-radius:12px;padding:14px 18px;color:#d9cdf0}
+footer{margin-top:64px;text-align:center;color:var(--sub);font-size:.85rem}
+a{color:#9db8ff}
+</style>
+</head>
+<body>
+<main>
+<header>
+  <img src="icon.png" alt="V-edit アイコン">
+  <h1>V-edit</h1>
+  <p class="lead">トーク・ゲーム実況などの動画編集に特化した、Windows向けの軽量エディタ</p>
+  <a class="btn" href="https://github.com/PONTAMUX/vedit">GitHub でソースを見る</a>
+  <a class="btn sub" href="https://github.com/PONTAMUX/vedit#readme">README</a>
+</header>
+
+<h2>特徴</h2>
+<div class="grid">
+  <div class="card"><h3>Premiere 風の編集画面</h3><p>タイムライン、J/K/L シャトル、リップルトリム、トラックのロック・表示切り替え、ヒストリー。ショートカットは Premiere に合わせています。</p></div>
+  <div class="card"><h3>編集は1つの JSON に</h3><p>カット・テロップ・差し込み・効果音・BGM をすべて project.json に書きます。画面でもコマンドでも、AI に JSON を書かせても同じものを編集できます。</p></div>
+  <div class="card"><h3>音声処理つき</h3><p>リップノイズ除去・ゲイン・ノーマライズ（ピーク / ラウドネス）、VST3 プラグイン。無音カットの候補も出せます。</p></div>
+  <div class="card"><h3>エフェクトとプリセット</h3><p>出入りの動き・揺れ・グロー・モザイク・トランジション・文字アニメーター・キーフレームと式。よく使う演出は1行のプリセットで書けます。</p></div>
+  <div class="card"><h3>修正対応</h3><p>先方に見せた版を控えておき、修正点の時刻をカット後も正しい位置に合わせて一覧できます。</p></div>
+  <div class="card"><h3>手動保存と写し</h3><p>保存は Ctrl+S。設定した分ごとに、プロジェクトの写しを自動で残すので、前の状態に戻せます。</p></div>
+</div>
+
+<h2>仕様</h2>
+<table>
+  <tr><td>対応OS</td><td>Windows 10 / 11（64bit）</td></tr>
+  <tr><td>編集画面</td><td>C++ / Qt 6（試作版は Python + ブラウザ）</td></tr>
+  <tr><td>再生・書き出し</td><td>FFmpeg（NVIDIA の GPU があれば NVDEC / NVENC で高速化）</td></tr>
+  <tr><td>書き出しエンジン</td><td>Rust（vengine）</td></tr>
+  <tr><td>同梱ツール</td><td>画像編集 vimg、音声編集 vaudio</td></tr>
+  <tr><td>ライセンス</td><td>未設定</td></tr>
+</table>
+
+<h2>現在の状態</h2>
+<p class="note">個人用に作っている開発中のツールです。配布用のzipは未公開で、いまはソースコードのみ公開しています。ビルドには Qt 6・FFmpeg などの開発環境が必要です。</p>
+
+<footer>
+  <p><a href="../">← PONTAMUX Apps</a></p>
+  <p>「Premiere」は Adobe の商標です。本ソフトは Adobe とは関係ありません。</p>
+  <p>© PONTAMUX · <a href="https://github.com/PONTAMUX/vedit">github.com/PONTAMUX/vedit</a></p>
+</footer>
+</main>
+</body>
+</html>

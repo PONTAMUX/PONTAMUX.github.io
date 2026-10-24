@@ -30,5 +30,20 @@
       "GPL-2.0"
     ],
     "icon": "vcast-studio/icon.png"
+  },
+  {
+    "id": "vedit",
+    "name": "V-edit",
+    "summary": "トーク・ゲーム実況などの動画編集に特化した、Windows向けの軽量エディタ",
+    "description": "カット・テロップ・差し込み・効果音・音声処理を1つの project.json で扱えます。Premiere 風の編集画面とコマンドの両方から編集でき、AI に JSON を書かせることもできます。開発中で、いまはソースコードのみ公開しています。",
+    "platform": "Windows 10 / 11（64bit）",
+    "repo": null,
+    "web": "vedit/",
+    "tags": [
+      "動画編集",
+      "C++ / Qt",
+      "FFmpeg"
+    ],
+    "icon": "vedit/icon.png"
   }
 ]
