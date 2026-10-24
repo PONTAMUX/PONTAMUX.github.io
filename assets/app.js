@@ -63,7 +63,11 @@
     var info = el('div', 'release');
     card.appendChild(info);
     var actions = el('div', 'actions');
-    if (app.web) actions.appendChild(link('btn sub', 'ブラウザで開く', app.web));
+    if (app.detail) {
+      var d = el('a', 'btn sub', '詳細を見る');
+      d.href = 'app.html?id=' + encodeURIComponent(app.id);
+      actions.appendChild(d);
+    } else if (app.web) actions.appendChild(link('btn sub', 'ブラウザで開く', app.web));
     card.appendChild(actions);
     if (app.repo) fillRelease(app, actions, info);
     else if (!app.web) info.textContent = "準備中";

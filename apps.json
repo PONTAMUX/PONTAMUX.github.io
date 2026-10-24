@@ -3,10 +3,33 @@
     "id": "chatdango",
     "name": "ChatDango",
     "summary": "Claude Code / Codex / OpenCode を、LINE風のチャット画面で使うローカルアプリ",
-    "description": "会話に名前・色・アイコンを付けて並べて管理でき、続きから話すと自動で再開されます。\nPCのブラウザだけでなく、スマホ(Tailscale経由)からも使えます。依存パッケージなし、Node.js だけで動きます。\n紹介動画はGitHubのページで見られます。",
+    "description": "会話に名前・色・アイコンを付けて並べて管理でき、続きから話すと自動で再開されます。",
     "platform": "Windows / Node.js",
     "repo": null,
     "web": "https://github.com/phenom0525/ChatDango",
-    "tags": ["Claude Code", "Codex", "OpenCode", "ローカル", "MIT"]
+    "tags": ["Claude Code", "Codex", "OpenCode", "ローカル", "MIT"],
+    "banner": "assets/chatdango/banner.png",
+    "detail": [
+      {
+        "title": "ChatDango とは",
+        "text": "ターミナルで使う AI コーディングツール(Claude Code / Codex / OpenCode)を、LINE のようなチャット画面で扱えるようにしたローカルアプリです。\n依存パッケージはなく、Node.js だけで動きます。"
+      },
+      {
+        "title": "会話をLINEのように管理",
+        "text": "会話ごとに名前・色・アイコンを付けて一覧に並べられます。前回の続きから話すと、自動で会話が再開されます。\nPC のブラウザだけでなく、Tailscale 経由でスマホからも使えます。",
+        "image": "assets/chatdango/chat.png",
+        "alt": "ChatDango のチャット画面"
+      },
+      {
+        "title": "作業の内容をその場で確認",
+        "text": "作業パネルで、AI が変更したファイルと差分(diff)をチャットの横で見られます。変更前の状態に戻すためのチェックポイントも用意しています。",
+        "image": "assets/chatdango/work-diff.png",
+        "alt": "作業パネルの差分表示"
+      },
+      {
+        "title": "そのほか",
+        "text": "・返信の読み上げ(VOICEVOX 対応)\n・テーマ(文字の大きさ・フォント・明るさ)の変更\n・紹介動画は GitHub の README で見られます\n\nライセンスは MIT です。"
+      }
+    ]
   }
 ]
