@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "chatdango",
+    "name": "ChatDango",
+    "summary": "Claude Code / Codex / OpenCode を、LINE風のチャット画面で使うローカルアプリ",
+    "description": "会話に名前・色・アイコンを付けて並べて管理でき、続きから話すと自動で再開されます。\nPCのブラウザだけでなく、スマホ(Tailscale経由)からも使えます。依存パッケージなし、Node.js だけで動きます。\n紹介動画はGitHubのページで見られます。",
+    "platform": "Windows / Node.js",
+    "repo": null,
+    "web": "https://github.com/phenom0525/ChatDango",
+    "tags": ["Claude Code", "Codex", "OpenCode", "ローカル", "MIT"]
+  }
+]
